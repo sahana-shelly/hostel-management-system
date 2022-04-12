@@ -1,0 +1,236 @@
+*{
+padding: 0;
+margin: 0;
+}
+a {
+    text-decoration: none;
+}
+.container{
+    width: calc(100% - 40px);
+    max-width: 1320px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;;
+}
+/* nav styles */
+.header{
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 5%;
+} 
+nav h2 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+} 
+.nav-menu{
+    flex: 1;
+    text-align:right;
+} 
+
+.nav-menu ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0px 12px;
+    position: relative;
+}
+.nav-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.nav-menu ul li::after{
+    content: "";
+    width:0px;
+    height: 5px;
+    background-color: black;
+    display: block;
+    position: absolute;
+}
+.nav-menu ul li:hover::after{
+    width:100%;
+    transition: width 1s;
+}
+.banner-content{
+    width: 80%;
+    color:white;
+    position:absolute;
+    top: 50%;
+    left:13%;
+}
+
+.banner-content a {
+    text-decoration: none;
+    color: white;
+}
+
+.banner-content h2 {
+    font-weight: bold;
+    font-size: 4.75em;
+    margin-bottom: 15px;
+}
+
+
+.banner-content p {
+    font-size: 25px;
+    margin-bottom: 35px;
+    width: 900px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.banner-content a.click {   
+    font-size: 25px;
+    color: white;
+    width: 200px;
+    height: 20px;
+    background-color: red;
+    padding: 15px 69px;
+    border-radius: 50px;
+    text-decoration: none;
+    margin-right: 40px;
+    font-weight: bold;
+}
+
+.banner-content a.read {   
+    font-size: 25px;
+    color: white;
+    width: 200px;
+    height: 20px;
+    background-color: rgb(61, 89, 139);
+    padding: 15px 69px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* about start */
+section.about-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+.column-6 {
+    float: left;
+    width: 50%;
+  }
+  
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.about-image img {
+    width: 100%;
+    height: auto;
+   }
+
+   .about-content {
+    margin-left: 50px;
+}
+.about-content h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.about-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+button.about-button {
+    background-color: rgb(61, 89, 139);
+    color: white;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 25px;
+}
+
+/* service start */
+section.service {
+    margin-top: 50px;
+}
+.column-4 {
+    float: left;
+    width: 33%;
+  }
+  .service-icon {
+    margin: 0 auto;
+    width: 100px;
+}
+.service-icon i {
+    font-size: 50px;
+}
+.service-box h3 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: skyblue;
+}
+
+.service-box p {
+    text-align: center;
+    margin-left: 10px;
+}
+.service-button {
+    width: 132px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.service-button button {
+    background-color: rgb(61, 89, 139);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 10px 18px;
+}
+
+/* Blog start */
+.blog-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.blog-title h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: teal;
+}
+
+.blog-title p {
+       color:#cdcdcd;
+}
+.blog-content h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    text-align: center;
+    color: rgb(61, 89, 139);
+}
+.blog-content p {
+    color: #cdcdcd;
+    margin-bottom: 20px;
+}
+.blog-content hr {
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border: 0.5px solid gray;
+}
